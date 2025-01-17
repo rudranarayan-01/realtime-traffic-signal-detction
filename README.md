@@ -62,15 +62,6 @@ pip install opencv-python opencv-python-headless tensorflow numpy matplotlib
    - Download the GTSRB dataset.
    - Extract it into the `traffic_sign_dataset/` directory.
 
-3. Run the training script to train the model:
-   ```bash
-   python train_model.py
-   ```
-
-4. Start real-time detection:
-   ```bash
-   python test.py --source 0   
-   ```
 
 ## Usage
 
@@ -89,7 +80,7 @@ The trained model will be saved as `traffic_sign_model.h5`.
 Use the real-time detection script to detect traffic signs using a webcam:
 
 ```bash
-python real_time_detection.py
+python test.py --source 0
 ```
 
 Press `q` to exit the real-time detection window.
